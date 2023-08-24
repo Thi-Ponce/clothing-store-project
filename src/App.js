@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <><div className="categories-container">
+      <div className="category">
+        <h2>Category image</h2>
+        <div className="category-content">
+          <h3>Hats</h3>
+          <p>Category description</p>
+        </div>
+      </div>
+    </div><div className="categories-container">
+        <div className="category">
+          <h2>Category image</h2>
+          <div className="category-content">
+            <h3>Jackets</h3>
+            <p>Category description</p>
+          </div>
+        </div>
+      </div><div className="categories-container">
+        <div className="category">
+          <h2>Category image</h2>
+          <div className="category-content">
+            <h3>Sneakers</h3>
+            <p>Category description</p>
+          </div>
+        </div>
+      </div><div className="categories-container">
+        <div className="category">
+          <h2>Category image</h2>
+          <div className="category-content">
+            <h3>Women</h3>
+            <p>Category description</p>
+          </div>
+        </div>
+      </div><div className="categories-container">
+        <div className="category">
+          <h2>Category image</h2>
+          <div className="category-content">
+            <h3>Men</h3>
+            <p>Category description</p>
+          </div>
+        </div>
+      </div></>
   );
 }
 
