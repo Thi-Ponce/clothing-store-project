@@ -1,46 +1,26 @@
 const App = () => {
+
+  const categories = [
+    {
+      id: 1,
+      title: 'Hats',
+    },
+  ];
+  
+
   return (
-    <><div className="categories-container">
-      <div className="category">
+    <div className="categories-container">
+      {categories.map(({title}) => (
+        <div className="category-container">
         <h2>Category image</h2>
-        <div className="category-content">
-          <h3>Hats</h3>
+        <div className="category-body-container">
+          <h3>{title}</h3>
           <p>Category description</p>
         </div>
       </div>
-    </div><div className="categories-container">
-        <div className="category">
-          <h2>Category image</h2>
-          <div className="category-content">
-            <h3>Jackets</h3>
-            <p>Category description</p>
-          </div>
-        </div>
-      </div><div className="categories-container">
-        <div className="category">
-          <h2>Category image</h2>
-          <div className="category-content">
-            <h3>Sneakers</h3>
-            <p>Category description</p>
-          </div>
-        </div>
-      </div><div className="categories-container">
-        <div className="category">
-          <h2>Category image</h2>
-          <div className="category-content">
-            <h3>Women</h3>
-            <p>Category description</p>
-          </div>
-        </div>
-      </div><div className="categories-container">
-        <div className="category">
-          <h2>Category image</h2>
-          <div className="category-content">
-            <h3>Men</h3>
-            <p>Category description</p>
-          </div>
-        </div>
-      </div></>
+      ))}
+      
+    </div>
   );
 }
 
