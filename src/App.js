@@ -1,4 +1,4 @@
-import CategoryItem from './Components/category-item/category-item.component';
+import Directory from './Components/directory/directory.component';
 
 const App = () => {
 
@@ -32,7 +32,7 @@ const App = () => {
   
 
   return (
-    
+    <Directory categories={categories} />
   );
 }
 
